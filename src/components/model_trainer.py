@@ -83,7 +83,7 @@ class ModelTrainer:
             }
 
 
-            model_report:dict=evaluate_models(X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test, models=models)
+            model_report:dict=evaluate_models(X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test, models=models, params=params)
 
             # Get the best model score from dict:
             sorted_model_report = sorted(model_report.items(), key=lambda x: x[1], reverse=True)
